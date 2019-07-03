@@ -8,7 +8,13 @@ class DownloadsController < ApplicationController
                 template: "invoices/pdf.html.slim",
                 layout: 'pdf.html.slim',
                 page_size: 'A4',
-                dpi: '300'
+                dpi: '300',
+                margin_top: '30',
+                margin_bottom: '23',
+                margin_right: '10',
+                header_spacing: '0',
+                quiet: true,
+                no_outline: true
 
       end
     end
